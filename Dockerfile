@@ -14,4 +14,4 @@ RUN \
 
 # Set the working dirrectory
 WORKDIR /src
-CMD["/bin/bash"]  
+CMD [ "node" ]
