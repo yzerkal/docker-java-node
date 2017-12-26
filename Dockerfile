@@ -6,7 +6,8 @@ MAINTAINER Yurii Zerkal <zerkal.work@gmail.com>
 RUN \
   cd /opt && \
   wget https://nodejs.org/dist/v9.3.0/node-v9.3.0-linux-x64.tar.xz && \
-  tar -xzf node-v9.3.0-linux-x64.tar.xz && \
+  mv node-v9.3.0-linux-x64.tar.xz node-v9.3.0-linux-x64.tar && \
+  tar xvf node-v9.3.0-linux-x64.tar.tar && \
   mv node-v9.3.0-linux-x64.tar.xz node && \
   cd /usr/local/bin && \
   ln -s /opt/node/bin/* . && \
